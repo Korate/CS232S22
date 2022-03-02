@@ -11,11 +11,11 @@ int main()
   int i;
   int lowercase, uppercase, digits, other;
   int length;
-  
+  char *t;
   puts("Type some text (then ENTER):");
   
   /* Save typed characters in text[]: */
-     fgets(text, MAX, stdin);
+     t=fgets(text, MAX, stdin);
 
   /* Analyse contents of text[]: */
     
