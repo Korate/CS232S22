@@ -25,7 +25,13 @@ int dump_all(node_t*);
 int main (int argc, char ** argv) {
 
     node_t * x = construct_3_strs();
-    return dump_all(x);
+    node_t * y = x->next;
+    node_t * z = y->next;
+    dump_all(x);
+  
+    free(z);
+    free(y);
+    free(x);
 
 }
 
