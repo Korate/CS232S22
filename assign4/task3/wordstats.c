@@ -10,8 +10,7 @@ int main () {
   char buf[MAX_BUF];
   char tmp[MAX_BUF];
   do{
-    fgets(tmp, MAX_BUF, stdin);
-    strcat(buf, tmp);
+    strcat(buf, fgets(tmp, MAX_BUF, stdin));
   }while(strlen(tmp)!=1);
   
   len = strlen(buf);
