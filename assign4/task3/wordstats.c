@@ -11,7 +11,8 @@ int main () {
   char tmp[MAX_BUF];
   do{
     strcat(buf, fgets(tmp, MAX_BUF, stdin));
-  }while(strlen(tmp)!=1);
+    //printf("%s\n", tmp);
+  }while(tmp[0]!='\n');
   
   len = strlen(buf);
   i=0;
